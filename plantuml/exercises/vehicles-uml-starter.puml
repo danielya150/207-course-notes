@@ -18,14 +18,14 @@ hide empty members
 '   Interface <|.. Class    ' realization:    Class implements Interface
 ' (Putting the parent/interface on the LEFT of the arrow keeps it on top.)
 
+interface Chargeable {
+  + charge() : void
+}
+
 abstract Vehicle {
   # make : String
   + Vehicle(make : String)
   + maxSpeed() : int {abstract}
-}
-
-interface Chargeable {
-  + charge() : void
 }
 
 class Car {
