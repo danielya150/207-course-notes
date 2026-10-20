@@ -21,10 +21,10 @@ interface Chargeable {
   + charge() : void
 }
 
-abstract Vehicle {
+abstract class Vehicle {
   # make : String
   + Vehicle(make : String)
-  + maxSpeed() : int {abstract}
+  + {abstract} maxSpeed() : int
 }
 
 class Car {
@@ -42,5 +42,5 @@ class ElectricCar {
 Vehicle <|-- Car
 Car <|-- ElectricCar
 Chargeable <|.. ElectricCar
-
 @enduml
+
