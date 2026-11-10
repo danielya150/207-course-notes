@@ -59,7 +59,10 @@ class Librarian {
   + waiveFee(member: Member) : void
 }
 
-
+Item <|-- BorrowableItem
+Item <|-- ReferenceItem
+BorrowableItem <|-- Book
+BorrowableItem <|-- DVD
 ' TODO: add whatever represents a hold, and connect it to the classes that need
 '       to know about it.
 
